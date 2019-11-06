@@ -1,0 +1,5 @@
+@YouBotMusic.message_handler(commands=['ACDC_new'])
+def music(message):
+	musicList=['https://www.youtube.com/watch?v=v2AC41dglnM']
+	YouBotMusic.reply_to(message, random.choice(musicList))
+	print(message)
